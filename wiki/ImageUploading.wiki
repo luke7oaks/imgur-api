@@ -42,3 +42,13 @@ c.setopt(c.HTTPPOST, values)
 c.perform()
 c.close()
 }}}
+
+==Sample Response==
+*XML*
+{{{
+}}}
+
+*JSON*
+{{{
+Coming soon.
+}}}
