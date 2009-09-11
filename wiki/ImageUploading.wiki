@@ -16,9 +16,14 @@ _Must be sent using POST._
   * 'image' - Must be your binary image file, not the text inside the image.
   * 'key'   - Your registered developer API key. Click [http://imgur.com/register/api.php here] to register for a key.
 
+==Implementation==
+Use [http://curl.haxx.se/ cURL] to send the POST data to Imgur. cURL libraries are available for most languages and are very simple to use.
+
 ==Sample Code==
-*Curl*
+*cURL Command Line*
+{{{
 curl -F image=@LOCAL_IMAGE_FILE_NAME -F key=YOUR_API_KEY http://imgur.com/api/upload/
+}}}
 
 *Python*
 {{{
