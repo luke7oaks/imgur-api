@@ -6,14 +6,11 @@
 The upload API is using the REST standard, and can be found here: http://imgur.com/api/upload/
 
 ==How it Works==
-
-*URL:* http://imgur.com/api/upload/
-
-*Method:* POST
-
-*Variables:*
-  * image
-  * key
+  *URL:* http://imgur.com/api/upload/
+  *Method:* POST
+  *Variables:*
+    * image
+    * key
 
 ===About The Variables==
 _Must be sent using POST_
