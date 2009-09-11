@@ -12,7 +12,6 @@ The upload API is using the REST standard, and can be found here: http://imgur.c
 *Method:* POST
 
 *Variables:*
-
   * image
   * key
 
