@@ -8,8 +8,11 @@ The upload API is using the REST standard, and can be found here: http://imgur.c
 ==How it Works==
 
 *URL:* http://imgur.com/api/upload/
+
 *Method:* POST
+
 *Variables:*
+
   * image
   * key
 
@@ -17,10 +20,3 @@ The upload API is using the REST standard, and can be found here: http://imgur.c
 _Must be sent using POST_
   * 'image' - Must be your binary image file, not the text inside the image.
   * 'key'   - Your registered developer API key. Click [http://imgur.com/register/api.php here] to register for a key.
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
