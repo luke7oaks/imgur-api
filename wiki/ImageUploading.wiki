@@ -66,12 +66,18 @@ c.close()
 Coming soon.
 }}}
 
-*Error*
+===Errors===
+
+*XML*
 {{{
 <?xml version="1.0" encoding="UTF-8"?>
 <rsp stat="fail">
 <err code="1004" msg="Invalid API Key" />
 </rsp>
+}}}
+
+*JSON*
+{{{
 }}}
 
 ==Possible Errors==
