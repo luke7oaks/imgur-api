@@ -19,6 +19,9 @@ _Must be sent using POST._
 ==Implementation==
 Use [http://curl.haxx.se/ cURL] to send the POST data to Imgur. cURL libraries are available for most languages and are very simple to use.
 
+==Limitations==
+The upload API has a daily and hourly upload limit for any given IP address. A single IP address is able to upload 50 images an hour and 200 images a day. For a possible lift or extension of this limit, please contact alan at: alan@imgur.com.
+
 ==Sample Code==
 *cURL Command Line*
 {{{
@@ -62,3 +65,15 @@ c.close()
 {{{
 Coming soon.
 }}}
+
+*Error*
+{{{
+<?xml version="1.0" encoding="UTF-8"?>
+<rsp stat="fail">
+<err code="1004" msg="Invalid API Key" />
+</rsp>
+}}}
+
+==Possible Errors==
+|| table || cells ||
+|| table || cells ||
