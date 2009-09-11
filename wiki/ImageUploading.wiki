@@ -46,6 +46,16 @@ c.close()
 ==Sample Response==
 *XML*
 {{{
+<?xml version="1.0" encoding="UTF-8"?>
+<rsp stat="ok">
+<image_hash>fBvr6</image_hash>
+<delete_hash>weSyGIYLR6</delete_hash>
+<original_image>http://imgur.com/fBvr6.png</original_image>
+<large_thumbnail>http://imgur.com/fBvr6l.png</large_thumbnail>
+<small_thumbnail>http://imgur.com/fBvr6s.png</small_thumbnail>
+<imgur_page>http://imgur.com/fBvr6</imgur_page>
+<delete_url>http://imgur.com/delete/weSyGIYLR6</delete_url>
+</rsp>
 }}}
 
 *JSON*
