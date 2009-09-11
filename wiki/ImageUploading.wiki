@@ -78,6 +78,7 @@ Coming soon.
 
 *JSON*
 {{{
+Coming soon.
 }}}
 
 ==Possible Errors==
@@ -93,6 +94,6 @@ Coming soon.
 || 1008 || Upload limit reached ||
 || 1009 || Animated GIF is larger than 2MB ||
 || 1010 || Animated PNG is larger than 2MB ||
-|| 1011 || "Invalid URL ||
+|| 1011 || Invalid URL ||
 || 1012 || Could not download the image from that URL ||
 || 1013 || Invalid Image. Not a URL or binary file ||
