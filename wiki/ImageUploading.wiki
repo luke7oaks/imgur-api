@@ -23,6 +23,7 @@ Use [http://curl.haxx.se/ cURL] to send the POST data to Imgur. cURL libraries a
 The upload API has a daily and hourly upload limit for any given IP address. A single IP address is able to upload 50 images an hour and 200 images a day. For a possible lift or extension of this limit, please contact Alan at: alan@imgur.com.
 
 ==Sample Code==
+_If you would like to add a language to this section, please email your sample code to Alan at: alan@imgur.com_
 *cURL Command Line*
 {{{
 curl -F image=@LOCAL_IMAGE_FILE_NAME -F key=YOUR_API_KEY http://imgur.com/api/upload/
