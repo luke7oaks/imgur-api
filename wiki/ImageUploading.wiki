@@ -24,6 +24,7 @@ The upload API has a daily and hourly upload limit for any given IP address. A s
 
 ==Sample Code==
 _If you would like to add a language to this section, please email your sample code to Alan at: alan@imgur.com_
+
 *cURL Command Line*
 {{{
 curl -F image=@LOCAL_IMAGE_FILE_NAME -F key=YOUR_API_KEY http://imgur.com/api/upload/
