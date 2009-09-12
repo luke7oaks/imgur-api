@@ -3,7 +3,7 @@
 
 =Image Uploading=
 
-The upload API is using the REST standard, and can be found here: http://imgur.com/api/upload/
+The upload API is using the REST standard, and can be found here: http://imgur.com/api/upload/.
 
 ==Details==
 
