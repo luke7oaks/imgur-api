@@ -27,7 +27,7 @@ _If you would like to add a language to this section, please email your sample c
 
 *cURL Command Line*
 {{{
-curl -F image=@LOCAL_IMAGE_FILE_NAME -F key=YOUR_API_KEY http://imgur.com/api/upload/
+curl -F image=@file.png -F key=YOUR_API_KEY http://imgur.com/api/upload/
 }}}
 {{{
 curl -d image=http://example.com/example.jpg -d key=YOUR_API_KEY http://imgur.com/api/upload/
@@ -42,7 +42,7 @@ import pycurl
 c = pycurl.Curl()
 values = [
           ("key", "YOUR_API_KEY"),
-          ("image", (c.FORM_FILE, "YOUR_IMAGE_FILE"))]
+          ("image", (c.FORM_FILE, "file.png"))]
 # OR:     ("image", "http://example.com/example.jpg"))]
 
 c.setopt(c.URL, "http://imgur.com/api/upload/")
