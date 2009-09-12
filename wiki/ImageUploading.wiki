@@ -13,7 +13,7 @@ The upload API is using the REST standard, and can be found here: http://imgur.c
 
 ==Parameters=
 _Must be sent using POST._
-  * 'image' - Must be your binary image file, not the text inside the image.
+  * 'image' - A binary image file or a URL.
   * 'key'   - Your registered developer API key. Click [http://imgur.com/register/api.php here] to register for a key.
 
 ==Implementation==
@@ -28,6 +28,9 @@ _If you would like to add a language to this section, please email your sample c
 *cURL Command Line*
 {{{
 curl -F image=@LOCAL_IMAGE_FILE_NAME -F key=YOUR_API_KEY http://imgur.com/api/upload/
+}}}
+{{{
+curl -d image=http://static.reddit.com/reddit.com.header.png -d key=YOUR_API_KEY http://imgur.com/api/upload/
 }}}
 
 *Python*
