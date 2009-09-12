@@ -30,7 +30,7 @@ _If you would like to add a language to this section, please email your sample c
 curl -F image=@LOCAL_IMAGE_FILE_NAME -F key=YOUR_API_KEY http://imgur.com/api/upload/
 }}}
 {{{
-curl -d image=http://static.reddit.com/reddit.com.header.png -d key=YOUR_API_KEY http://imgur.com/api/upload/
+curl -d image=http://example.com/example.jpg -d key=YOUR_API_KEY http://imgur.com/api/upload/
 }}}
 
 *Python*
@@ -43,6 +43,7 @@ c = pycurl.Curl()
 values = [
           ("key", "YOUR_API_KEY"),
           ("image", (c.FORM_FILE, "YOUR_IMAGE_FILE"))]
+# OR:     ("image", "http://example.com/example.jpg"))]
 
 c.setopt(c.URL, "http://imgur.com/api/upload/")
 c.setopt(c.HTTPPOST, values)
