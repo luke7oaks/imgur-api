@@ -27,10 +27,10 @@ _If you would like to add a language to this section, please email your sample c
 
 *cURL Command Line*
 {{{
-curl -F image=@file.png -F key=YOUR_API_KEY http://imgur.com/api/upload/
+curl -F "image=@file.png" -F "key=YOUR_API_KEY" http://imgur.com/api/upload/
 }}}
 {{{
-curl -d image=http://example.com/example.jpg -d key=YOUR_API_KEY http://imgur.com/api/upload/
+curl -d "image=http://example.com/example.jpg" -d "key=YOUR_API_KEY" http://imgur.com/api/upload/
 }}}
 
 *Python*
