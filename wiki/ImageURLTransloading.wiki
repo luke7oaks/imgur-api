@@ -14,7 +14,7 @@ The image URL transloading API allows you to instantly move an image from one we
 ==Parameters==
 
     * 'url' - A URL to an image.
-    * 'edit' - Whether or not to edit the image or not.
+    * 'edit' - Whether or not to edit the image before uploading.
 
 ==Implementation==
 
