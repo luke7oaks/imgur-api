@@ -32,10 +32,10 @@ Just point your browser to this URL http://imgur.com/api/upload/?url=URL_HERE wi
 
 *cURL*
 {{{
-curl http://imgur.com/api/upload/?url=http://example.com/image.jpg
+curl "http://imgur.com/api/upload/?url=http://example.com/image.jpg"
 }}}
 {{{
-curl http://imgur.com/api/upload/?edit&url=http://example.com/image.jpg
+curl "http://imgur.com/api/upload/?edit&url=http://example.com/image.jpg"
 }}}
 
 *PHP*
