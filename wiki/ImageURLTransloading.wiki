@@ -18,7 +18,7 @@ The image URL transloading API allows you to instantly move an image from one we
 
 ==Implementation==
 
-Just point your browser to this URL http://imgur.com/api/upload/?url=URL_HERE with the URL you wish to transload. Alternatively, you can point your browser to http://imgur.com/api/upload/?edit&url=URL_HERE if you wish to edit the image first.
+Just point your browser to this URL http://imgur.com/api/upload/?url=URL_HERE with the URL you wish to transload. Alternatively, you can point your browser to http://imgur.com/api/upload/?edit&url=URL_HERE if you wish to edit the image first. No developer API key is necessary.
 
 ==Sample Code==
 
