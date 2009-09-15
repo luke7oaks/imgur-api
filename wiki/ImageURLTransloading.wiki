@@ -1,22 +1,24 @@
 #summary Image URL Transloading
 #labels Featured,Phase-Implementation
 
-=Details=
+=Image URL Transloading=
+
+==Details==
 
 *URL:* http://imgur.com/api/upload/
 
 *Method:* GET (HTTP)
 
-=Parameters=
+==Parameters==
 
     * 'url' - A URL to an image.
     * 'edit' - Whether or not to edit the image or not.
 
-=Implementation=
+==Implementation==
 
 Just point your browser to this URL http://imgur.com/api/upload/?url=URL_HERE with the URL you wish to transload. Alternatively, you can point your browser to http://imgur.com/api/upload/?edit&url=URL_HERE if you wish to edit the image first.
 
-=Sample Code=
+==Sample Code==
 
 *HTML Link*
 {{{
