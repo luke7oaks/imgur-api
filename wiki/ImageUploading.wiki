@@ -73,16 +73,29 @@ c.close()
 
 *JSON*
 {{{
-Coming soon.
+{
+        "rsp": {
+                "stat": "ok", 
+                "image": {
+                        "image_hash": "mM84h", 
+                        "delete_hash": "CZoRTG208s", 
+                        "original_image": "http://imgur.com/mM84h.png", 
+                        "large_thumbnail": "http://imgur.com/mM84hl.png", 
+                        "small_thumbnail": "http://imgur.com/mM84hl.png", 
+                        "imgur_page": "http://imgur.com/mM84h", 
+                        "delete_page": "http://imgur.com/delete/CZoRTG208s"
+                }
+        }
+}
 }}}
 
 ===Errors===
 
 *XML*
 {{{
-<?xml version="1.0" encoding="UTF-8"?>
 <rsp stat="fail">
-<err code="1004" msg="Invalid API Key" />
+	<error_code>1000</error_code>
+	<error_msg>No image selected</error_msg>
 </rsp>
 }}}
 
@@ -90,16 +103,9 @@ Coming soon.
 {{{
 {
 	"rsp": {
-		"stat": "ok", 
-		"image": {
-			"image_hash": "mM84h", 
-			"delete_hash": "CZoRTG208s", 
-			"original_image": "http://imgur.com/mM84h.png", 
-			"large_thumbnail": "http://imgur.com/mM84hl.png", 
-			"small_thumbnail": "http://imgur.com/mM84hl.png", 
-			"imgur_page": "http://imgur.com/mM84h", 
-			"delete_page": "http://imgur.com/delete/CZoRTG208s"
-		}
+		"stat": "fail", 
+		"error_code": 1000, 
+		"error_msg": "No image selected"
 	}
 }
 }}}
