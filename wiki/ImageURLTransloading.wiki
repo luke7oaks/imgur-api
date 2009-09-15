@@ -20,6 +20,10 @@ The image URL transloading API allows you to instantly move an image from one we
 
 Just point your browser to this URL http://imgur.com/api/upload/?url=URL_HERE with the URL you wish to transload. Alternatively, you can point your browser to http://imgur.com/api/upload/?edit&url=URL_HERE if you wish to edit the image first. No developer API key is necessary.
 
+==Limitations==
+
+Transloading an image requires the use of [http://en.wikipedia.org/wiki/HTTP_cookie cookies] - or more specifically, [http://en.wikipedia.org/wiki/Session_%28computer_science%29 sessions] - and will not work if the browser does not support them or if they are disabled.
+
 ==Sample Code==
 
 *HTML Link*
@@ -28,14 +32,6 @@ Just point your browser to this URL http://imgur.com/api/upload/?url=URL_HERE wi
 }}}
 {{{
 <a href="http://imgur.com/api/upload/?edit&url=http://example.com/image.jpg">Transload and Edit Image</a>
-}}}
-
-*cURL Command Line*
-{{{
-curl "http://imgur.com/api/upload/?url=http://example.com/image.jpg"
-}}}
-{{{
-curl "http://imgur.com/api/upload/?edit&url=http://example.com/image.jpg"
 }}}
 
 *PHP*
