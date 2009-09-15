@@ -49,7 +49,7 @@ values = [
           ("image", (c.FORM_FILE, "file.png"))]
 # OR:     ("image", "http://example.com/example.jpg"))]
 
-c.setopt(c.URL, "http://imgur.com/api/upload/")
+c.setopt(c.URL, "http://imgur.com/api/upload.xml")
 c.setopt(c.HTTPPOST, values)
 
 c.perform()
