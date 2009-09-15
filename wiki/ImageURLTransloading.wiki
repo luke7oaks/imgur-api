@@ -1,0 +1,43 @@
+#summary Image URL Transloading
+#labels Featured,Phase-Implementation
+
+=Details=
+
+URL: http://imgur.com/api/upload/
+
+Method: GET (HTTP)
+
+=Parameters=
+
+    * 'url' - A URL to an image.
+    * 'edit' - Whether or not to edit the image or not.
+
+=Implementation=
+
+Just point your browser to this URL http://imgur.com/api/upload/?url=URL_HERE with the URL you wish to transload. Alternatively, you can point your browser to http://imgur.com/api/upload/?edit&url=URL_HERE if you wish to edit the image first.
+
+=Sample Code=
+
+*HTML Link*
+{{{
+<a href="http://imgur.com/api/upload/?url=http://example.com/image.jpg">Transload Image</a>
+}}}
+{{{
+<a href="http://imgur.com/api/upload/?edit&url=http://example.com/image.jpg">Transload and Edit Image</a>
+}}}
+
+*curl*
+{{{
+http://imgur.com/api/upload/?url=http://example.com/image.jpg
+}}}
+{{{
+http://imgur.com/api/upload/?edit&url=http://example.com/image.jpg
+}}}
+
+*PHP*
+{{{
+header("Location: http://imgur.com/api/upload/?url=http://example.com/image.jpg");
+}}}
+{{{
+header("Location: http://imgur.com/api/upload/?edit&url=http://example.com/image.jpg");
+}}}
