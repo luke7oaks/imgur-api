@@ -3,6 +3,8 @@
 
 =Image URL Transloading=
 
+The image URL transloading API allows you to instantly move an image from one web host to another.
+
 ==Details==
 
 *URL:* http://imgur.com/api/upload/
