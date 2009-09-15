@@ -84,7 +84,20 @@ Coming soon.
 
 *JSON*
 {{{
-Coming soon.
+{
+	"rsp": {
+		"stat": "ok", 
+		"image": {
+			"image_hash": "mM84h", 
+			"delete_hash": "CZoRTG208s", 
+			"original_image": "http://imgur.com/mM84h.png", 
+			"large_thumbnail": "http://imgur.com/mM84hl.png", 
+			"small_thumbnail": "http://imgur.com/mM84hl.png", 
+			"imgur_page": "http://imgur.com/mM84h", 
+			"delete_page": "http://imgur.com/delete/CZoRTG208s"
+		}
+	}
+}
 }}}
 
 ==Possible Errors==
