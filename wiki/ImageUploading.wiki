@@ -12,8 +12,8 @@ The upload API is using the REST standard, and can be found here: http://imgur.c
 *Method:* POST (HTTP)
 
 ===Formats===
-  XML : http://imgur.com/api/upload.xml (default)
-  JSON : http://imgur.com/api/upload.json
+  * XML - http://imgur.com/api/upload.xml (default)
+  * JSON - http://imgur.com/api/upload.json
 
 ==Parameters=
 _Must be sent using POST._
