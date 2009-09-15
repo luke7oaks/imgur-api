@@ -30,7 +30,7 @@ Just point your browser to this URL http://imgur.com/api/upload/?url=URL_HERE wi
 <a href="http://imgur.com/api/upload/?edit&url=http://example.com/image.jpg">Transload and Edit Image</a>
 }}}
 
-*cURL*
+*cURL Command Line*
 {{{
 curl "http://imgur.com/api/upload/?url=http://example.com/image.jpg"
 }}}
