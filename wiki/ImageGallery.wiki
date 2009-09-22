@@ -1,4 +1,5 @@
 #summary The Image Gallery API
+#labels Featured,Phase-Implementation
 
 =Image Gallery=
 
