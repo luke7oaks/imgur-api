@@ -3,7 +3,7 @@
 
 =Image Uploading=
 
-The upload API is using the REST standard, and can be found here: http://imgur.com/api/upload/.
+The REST upload API allows one to upload local image files or image URLs to Imgur.
 
 ==Details==
 
