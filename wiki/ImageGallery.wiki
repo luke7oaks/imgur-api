@@ -1,0 +1,13 @@
+#summary The Image Gallery API
+
+=Introduction=
+
+The image gallery API gives full read access to the Imgur Gallery.
+
+=Details=
+  * *URL*: http://imgur.com/api/gallery
+  * *Method*: GET (HTTP)
+
+  * *Return Formats*:
+    * *XML*: http://imgur.com/api/gallery.xml (default)
+    * *JSON*: http://imgur.com/api/gallery.json
