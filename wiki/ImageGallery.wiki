@@ -11,5 +11,19 @@ The image gallery API gives full read access to the Imgur Gallery.
 
 ==Return Formats==
 
-    * *XML*: http://imgur.com/api/gallery.xml (default)
-    * *JSON*: http://imgur.com/api/gallery.json
+  * *XML*: http://imgur.com/api/gallery.xml (default)
+  * *JSON*: http://imgur.com/api/gallery.json
+
+==Parameters==
+
+  * 'sort' - Sort images by:
+    * 'latest' - The latest images that have been added to the gallery (default),
+    * 'popular' - The most popular images that are in the gallery, based on views.
+  * 'view' - View certain images based on the date the images were added:
+    * 'week' - The past 7 days,
+    * 'month' - The past month,
+    * 'all' - All time (default).
+  * 'count' - How many images to display:
+    * Must be an integer between 0 and 50 (default: 20).
+  * 'page' - Which page of images to display:
+    * Must be an integer above 0 (default: 1).
