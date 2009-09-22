@@ -10,7 +10,7 @@ The REST upload API allows one to upload local image files or image URLs to Imgu
   * *URL:* http://imgur.com/api/upload
   * *Method:* POST (HTTP)
 
-===Formats===
+==Return Formats==
   * *XML* - http://imgur.com/api/upload.xml (default)
   * *JSON* - http://imgur.com/api/upload.json
 
