@@ -15,6 +15,9 @@ The image gallery API gives full read access to the Imgur Gallery.
   * *XML*: http://imgur.com/api/gallery.xml (default)
   * *JSON*: http://imgur.com/api/gallery.json
 
+==Examples==
+
+
 ==Parameters==
 
   * 'sort' - Sort images by:
@@ -28,3 +31,59 @@ The image gallery API gives full read access to the Imgur Gallery.
     * Must be an integer between 0 and 50 (default: 20).
   * 'page' - Which page of images to display:
     * Must be an integer above 0 (default: 1).
+
+==Sample Output==
+*XML*
+{{{
+<images>
+	<image>
+		<image_hash>xXZN7</image_hash>
+		<imgur_page>http://imgur.com/xXZN7</imgur_page>
+		<original_image>http://imgur.com/xXZN7.png</original_image>
+		<large_thumbnail>http://imgur.com/xXZN7l.png</large_thumbnail>
+		<small_thumbnail>http://imgur.com/xXZN7s.png</small_thumbnail>
+		<source/>
+		<message/>
+		<date_popular>2009-10-01 16:55:44</date_popular>
+	</image>
+	<image>
+		<image_hash>JSLod</image_hash>
+		<imgur_page>http://imgur.com/JSLod</imgur_page>
+		<original_image>http://imgur.com/JSLod.jpg</original_image>
+		<large_thumbnail>http://imgur.com/JSLodl.jpg</large_thumbnail>
+		<small_thumbnail>http://imgur.com/JSLods.jpg</small_thumbnail>
+		<source>
+		http://www.reddit.com/r/funny/comments/9psyf/its_a_tough_world_out_there_even_for_squirrels/
+		</source>
+		<message>It's a tough world out there. Even for squirrels.</message>
+		<date_popular>2009-10-01 10:55:30</date_popular>
+	</image>
+</images>
+}}}
+*JSON*
+{{{
+{
+    "images": {
+        "xXZN7": {
+            "image_hash": "xXZN7",
+            "imgur_page": "http:\/\/imgur.com\/xXZN7",
+            "original_image": "http:\/\/imgur.com\/xXZN7.png",
+            "large_thumbnail": "http:\/\/imgur.com\/xXZN7l.png",
+            "small_thumbnail": "http:\/\/imgur.com\/xXZN7s.png",
+            "source": "",
+            "message": "",
+            "date_popular": "2009-10-01 16:55:44"
+        },
+        "JSLod": {
+            "image_hash": "JSLod",
+            "imgur_page": "http:\/\/imgur.com\/JSLod",
+            "original_image": "http:\/\/imgur.com\/JSLod.jpg",
+            "large_thumbnail": "http:\/\/imgur.com\/JSLodl.jpg",
+            "small_thumbnail": "http:\/\/imgur.com\/JSLods.jpg",
+            "source": "http:\/\/www.reddit.com\/r\/funny\/comments\/9psyf\/its_a_tough_world_out_there_even_for_squirrels\/",
+            "message": "It's a tough world out there. Even for squirrels.",
+            "date_popular": "2009-10-01 10:55:30"
+        }
+    }
+}
+}}}
