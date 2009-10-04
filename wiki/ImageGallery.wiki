@@ -106,7 +106,6 @@ curl "http://imgur.com/api/gallery.xml?sort=popular&view=month"
 
 ==Possible Errors==
 
-==Possible Errors==
 || *Code* || *Message* ||
 || 2000 || Invalid gallery return format ||
 || 2001 || Invalid gallery view request ||
