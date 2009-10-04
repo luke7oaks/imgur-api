@@ -15,9 +15,6 @@ The image gallery API gives full read access to the Imgur Gallery.
   * *XML*: http://imgur.com/api/gallery.xml (default)
   * *JSON*: http://imgur.com/api/gallery.json
 
-==Examples==
-
-
 ==Parameters==
 
   * 'sort' - Sort images by:
@@ -31,6 +28,25 @@ The image gallery API gives full read access to the Imgur Gallery.
     * Must be an integer between 0 and 50 (default: 20).
   * 'page' - Which page of images to display:
     * Must be an integer above 0 (default: 1).
+
+==Examples==
+
+*cURL*: 
+
+_Defaults_
+{{{
+curl "http://imgur.com/api/gallery.xml"
+}}}
+
+_Sort by the most popular gallery images and output JSON:_
+{{{
+curl "http://imgur.com/api/gallery.json?sort=popular"
+}}}
+
+_View this months most popular gallery images:_
+{{{
+curl "http://imgur.com/api/gallery.xml?sort=popular&view=month"
+}}}
 
 ==Sample Output==
 *XML*
