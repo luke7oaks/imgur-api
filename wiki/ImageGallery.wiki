@@ -111,4 +111,5 @@ curl "http://imgur.com/api/gallery.xml?sort=popular&view=month"
 || 2001 || Invalid gallery sort request ||
 || 2002 || Invalid gallery page request ||
 || 2003 || Invalid gallery count request ||
-|| 9000 || Invalid response format ||
+|| 9000 || Invalid API request ||
+|| 9001 || Invalid response format ||
