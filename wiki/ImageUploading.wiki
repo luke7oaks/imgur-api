@@ -125,3 +125,4 @@ c.close()
 || 1011 || Invalid URL ||
 || 1012 || Could not download the image from that URL ||
 || 1013 || Invalid Image. Not a URL or binary file ||
+|| 9000 || Invalid response format ||
