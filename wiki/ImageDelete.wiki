@@ -59,4 +59,4 @@ curl "http://imgur.com/api/delete/Sflef43ALZ.json"
 || 4000 || No image selected ||
 || 4001 || Invalid delete hash ||
 || 4002 || Image could not be deleted ||
-|| 4003 || Invalid delete response format ||
+|| 9000 || Invalid response format ||
