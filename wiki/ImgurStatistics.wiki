@@ -104,4 +104,5 @@ curl "http://imgur.com/api/stats/RKLHR.json"
 || *Code* || *Message* ||
 || 3000 || Invalid image hash ||
 || 3001 || Invalid stats view request ||
-|| 9000 || Invalid response format ||
+|| 9000 || Invalid API request ||
+|| 9001 || Invalid response format ||
