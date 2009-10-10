@@ -1,0 +1,62 @@
+#summary The Delete API
+
+=Deleting Images=
+
+The Imgur Delete API allows you to delete your uploaded images.
+
+==Details==
+
+  * *URL*: http://imgur.com/api/delete/DELETE_HASH
+  * *Method*: GET (HTTP)
+
+==Return Formats==
+
+  * *XML*: http://imgur.com/api/stats/DELETE_HASH.xml (default)
+  * *JSON*: http://imgur.com/api/stats/DELETE_HASH.json
+
+_Obviously, replace DELETE_HASH with the actual delete hash._
+
+==Parameters==
+
+_None._
+
+==Examples==
+
+*cURL*: 
+
+_Delete an Image_
+{{{
+curl "http://imgur.com/api/delete/Sflef43ALZ.xml"
+}}}
+
+_Delete an Image_
+{{{
+curl "http://imgur.com/api/delete/Sflef43ALZ.json"
+}}}
+
+==Sample Output==
+
+*XML*
+{{{
+<rsp stat="ok">
+	<message>Success</message>
+</rsp>
+}}}
+
+*JSON*
+{{{
+{
+	"rsp": {
+		"stat": "ok",
+		"message": "Success"
+	}
+}
+}}}
+
+==Possible Errors==
+
+|| *Code* || *Message* ||
+|| 4000 || No image selected ||
+|| 4001 || Invalid delete hash ||
+|| 4002 || Image could not be deleted ||
+|| 4003 || Invalid delete response format ||
