@@ -1,4 +1,5 @@
 #summary The Delete API
+#labels Featured,Phase-Implementation
 
 =Deleting Images=
 
