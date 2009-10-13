@@ -12,8 +12,8 @@ The Imgur Delete API allows you to delete your uploaded images.
 
 ==Return Formats==
 
-  * *XML*: http://imgur.com/api/stats/DELETE_HASH.xml (default)
-  * *JSON*: http://imgur.com/api/stats/DELETE_HASH.json
+  * *XML*: http://imgur.com/api/delete/DELETE_HASH.xml (default)
+  * *JSON*: http://imgur.com/api/delete/DELETE_HASH.json
 
 _Obviously, replace DELETE_HASH with the actual delete hash._
 
