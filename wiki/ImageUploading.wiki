@@ -117,7 +117,7 @@ c.close()
 || 1000 || No image selected ||
 || 1001 || Image failed to upload ||
 || 1002 || Image larger than 10MB ||
-|| 1003 || Invalid image type ||
+|| 1003 || Invalid image type or URL ||
 || 1004 || Invalid API Key ||
 || 1005 || Upload failed during process ||
 || 1006 || Upload failed during the copy process ||
@@ -127,6 +127,5 @@ c.close()
 || 1010 || Animated PNG is larger than 2MB ||
 || 1011 || Invalid URL ||
 || 1012 || Could not download the image from that URL ||
-|| 1013 || Invalid Image. Not a URL or binary file ||
 || 9000 || Invalid API request ||
 || 9001 || Invalid response format ||
