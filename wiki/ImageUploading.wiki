@@ -16,11 +16,13 @@ The REST upload API allows one to upload local image files or image URLs to Imgu
 
 ==Parameters=
 _Must be sent using POST._
-  * 'image' - A binary image file or a URL.
+  * 'image' - A binary image file, base64 encoded string, or URL.
   * 'key'   - Your registered developer API key. Click [http://imgur.com/register/api.php here] to register for a key.
 
 ==Implementation==
 Use [http://curl.haxx.se/ cURL] to send the POST data to Imgur. cURL libraries are available for most languages and are very simple to use.
+
+For sending a base64 encoded image, you must base64 encode the entire contents of the image file and send the data through the image parameter.
 
 ==Limitations==
 The upload API has a daily and hourly upload limit for any given IP address. A single IP address is able to upload 50 images an hour and 200 images a day. For a possible lift or extension of this limit, please contact Alan at: alan@imgur.com.
@@ -47,6 +49,7 @@ values = [
           ("key", "YOUR_API_KEY"),
           ("image", (c.FORM_FILE, "file.png"))]
 # OR:     ("image", "http://example.com/example.jpg"))]
+# OR:     ("image", "BASE64_ENCODED_STRING"))]
 
 c.setopt(c.URL, "http://imgur.com/api/upload.xml")
 c.setopt(c.HTTPPOST, values)
