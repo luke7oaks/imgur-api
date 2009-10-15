@@ -25,9 +25,9 @@ _Obviously, replace IMAGE_HASH with the actual image hash._
 _Only for site statistics._
 
   * 'view' - View certain images based on the date the images were added:
+    * 'day' - The past 24 hours,
     * 'week' - The past 7 days,
-    * 'month' - The past month,
-    * 'all' - All time (default).
+    * 'month' - The past month (default).
 
 ==Examples==
 
