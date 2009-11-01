@@ -93,6 +93,26 @@ class Client:
     return json.loads(urlfetch.fetch("http://imgur.com/api/stats.json", payload=payload_data))
 }}}
 
+*PHP*
+{{{
+<?
+    // $data is file data
+    $pvars   = array('image' => base64_encode($data), 'key' => IMGUR_API_KEY);
+    $timeout = 30;
+    $curl    = curl_init();
+    $post    = http_build_query($pvars);
+
+    curl_setopt($curl, CURLOPT_URL, 'http://imgur.com/api/upload.xml');
+    curl_setopt($curl, CURLOPT_TIMEOUT, $timeout);
+    curl_setopt($curl, CURLOPT_POST, 1);
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $post);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, array("Content-type: application/x-www-form-urlencoded"));
+
+    $xml = curl_exec($curl);
+
+    curl_close ($curl);
+?>
+}}}
 
 ==Sample Response==
 *XML*
