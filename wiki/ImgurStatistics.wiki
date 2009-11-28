@@ -77,8 +77,8 @@ curl "http://imgur.com/api/stats/RKLHR.json"
 {{{
 {
     "stats": {
-        "views": "146,345",
-        "size": "107053",
+        "views": 146,345,
+        "size": 107053,
         "bandwidth": 15666671285,
         "date": "2009-09-16 02:26:09",
         "type": "image\/jpeg"
@@ -91,10 +91,10 @@ curl "http://imgur.com/api/stats/RKLHR.json"
 {
     "stats": {
         "most_popular_images": ["h9Guq", "PuIht", "UfB6c", "z45uZ", "MGqb7"],
-        "images_uploaded": "133718",
-        "images_veiwed": "132152948",
-        "bandwidth_used": "23288486706064",
-        "average_image_size": "178039.55612740"
+        "images_uploaded": 133718,
+        "images_veiwed": 132152948,
+        "bandwidth_used": 23288486706064,
+        "average_image_size": 178039.55612740
     }
 }
 }}}
