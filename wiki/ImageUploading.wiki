@@ -123,7 +123,7 @@ class Client:
 	<delete_hash>NNy6VNpiAA</delete_hash>
 	<original_image>http://imgur.com/cxmHM.png</original_image>
 	<large_thumbnail>http://imgur.com/cxmHMl.png</large_thumbnail>
-	<small_thumbnail>http://imgur.com/cxmHMl.png</small_thumbnail>
+	<small_thumbnail>http://imgur.com/cxmHMs.png</small_thumbnail>
 	<imgur_page>http://imgur.com/cxmHM</imgur_page>
 	<delete_page>http://imgur.com/delete/NNy6VNpiAA</delete_page>
 </rsp>
@@ -139,7 +139,7 @@ class Client:
                         "delete_hash": "CZoRTG208s", 
                         "original_image": "http://imgur.com/mM84h.png", 
                         "large_thumbnail": "http://imgur.com/mM84hl.png", 
-                        "small_thumbnail": "http://imgur.com/mM84hl.png", 
+                        "small_thumbnail": "http://imgur.com/mM84hs.png", 
                         "imgur_page": "http://imgur.com/mM84h", 
                         "delete_page": "http://imgur.com/delete/CZoRTG208s"
                 }
