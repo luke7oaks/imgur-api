@@ -96,6 +96,10 @@ class Client:
 *PHP*
 {{{
 <?
+    $filename = "image.jpg";
+    $handle = fopen($filename, "r");
+    $data = fread($handle, filesize($filename));
+
     // $data is file data
     $pvars   = array('image' => base64_encode($data), 'key' => IMGUR_API_KEY);
     $timeout = 30;
