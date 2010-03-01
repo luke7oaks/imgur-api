@@ -104,13 +104,11 @@ class Client:
     $pvars   = array('image' => base64_encode($data), 'key' => IMGUR_API_KEY);
     $timeout = 30;
     $curl    = curl_init();
-    $post    = http_build_query($pvars);
 
     curl_setopt($curl, CURLOPT_URL, 'http://imgur.com/api/upload.xml');
     curl_setopt($curl, CURLOPT_TIMEOUT, $timeout);
     curl_setopt($curl, CURLOPT_POST, 1);
-    curl_setopt($curl, CURLOPT_POSTFIELDS, $post);
-    curl_setopt($curl, CURLOPT_HTTPHEADER, array("Content-type: application/x-www-form-urlencoded"));
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $pvars);
 
     $xml = curl_exec($curl);
 
