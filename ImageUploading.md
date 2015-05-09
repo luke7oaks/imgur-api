@@ -1,0 +1,1 @@
+# This documentation has moved to http://api.imgur.com #
